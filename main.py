@@ -16,14 +16,18 @@ def justificar(texto,ancho):
     elif letra == " ":
       linea = linea.strip()
       print(linea)
+      print("A esta linea hay que agregarle un espacio.")
       linea = ""  
       i = 1
     else:
       linea = linea[:-len(resto)]
+      linea = linea.strip()
       print(linea)
+      print("A esta linea hay que agregarle" + str(30 - len(linea)) + "espacios.")
       resto += letra
       linea = resto
       i = len(resto)
+  print(linea)     
 
 justificar(texto, ancho)
 
