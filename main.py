@@ -10,16 +10,18 @@ def justificar(texto,ancho):
       resto += letra
     else:
       resto = ""
-    i += 1
-  elif letra == " ":
-    linea = linea.strip()
-    print(linea)
-    linea = ""  
-    i = 1
+      i += 1
+    elif letra == " ":
+      linea = linea.strip()
+      print(linea)
+      linea = ""  
+      i = 1
     else:
       linea = linea[:-len(resto)]
       print(linea)
       resto += letra
+      linea = resto
+      i = len(resto)
 
 justificar(texto, ancho)
 
