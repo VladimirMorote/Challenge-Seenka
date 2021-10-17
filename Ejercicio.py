@@ -48,12 +48,12 @@ def justificar(texto,tam):
                 linea = ""
                 i = 1
         else:
-            '''En esta parte del if se ingresa si el último caracter no es un espacio.
-            Cuando esto pasa, quiere decir que una palabra se está cortando y hay que eliminarla de la línea'''
+            #En esta parte del if se ingresa si el último caracter no es un espacio.
+            #Cuando esto pasa, quiere decir que una palabra se está cortando y hay que eliminarla de la línea
             linea = linea[:-len(resto)]
-            '''Se borra la palabra parcial en resto de la línea.'''
+            #Se borra la palabra parcial en resto de la línea
             linea = linea.strip()
-            '''Se elimina el espacio en blanco al final de la línea'''
+            #Se elimina el espacio en blanco al final de la línea
             lista = linea.split()
             #Se pasa la linea a un formato de lista
             espacios = 30 - len(linea)
